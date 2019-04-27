@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@color/gray"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_layout" android:layout_margin="5pt">
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Tvtitle" android:textSize="24sp"
+                android:textColor="@color/blue"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/TVcontent" android:paddingLeft="10pt"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Space
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent" android:layout_weight="0"/>
+            <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="42dp" app:srcCompat="@drawable/deleteicon"
+                    android:id="@+id/bu_delete" android:layout_weight="0" android:background="@android:color/white"/>
+            <Space
+                    android:layout_width="13dp"
+                    android:layout_height="match_parent" android:layout_weight="0"/>
+            <ImageButton
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/editeicon"
+                    android:id="@+id/bu_edite" android:layout_weight="0" android:background="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
